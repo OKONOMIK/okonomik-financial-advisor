@@ -1,40 +1,34 @@
 'use client';
 
 import type { JSX } from 'react';
-import { LogoVercel } from '@vercel/geistcn-assets/logos';
 import { ThemeSwitcher } from '@vercel/geistcn/components/theme-switcher';
 import { Link } from '@vercel/geistcn/components/link';
+import { Logo } from '@/components/logo';
 
 const COLUMNS = [
   {
-    heading: 'Product',
+    heading: 'Leistungen',
     links: [
-      { label: 'Features', href: '#' },
-      { label: 'Pricing', href: '#' },
-      { label: 'Changelog', href: '#' },
+      { label: 'Vermögensaufbau', href: '#leistungen' },
+      { label: 'Altersvorsorge', href: '#leistungen' },
+      { label: 'Edelmetalle', href: '#edelmetalle' },
+      { label: 'Rentenrechner', href: '#rechner' },
     ],
   },
   {
-    heading: 'Resources',
+    heading: 'Unternehmen',
     links: [
-      { label: 'Documentation', href: '#' },
-      { label: 'Guides', href: '#' },
-      { label: 'Blog', href: '#' },
+      { label: 'Über uns', href: '#ueber-uns' },
+      { label: 'Unabhängigkeit', href: '#ueber-uns' },
+      { label: 'Kontakt', href: '#kontakt' },
     ],
   },
   {
-    heading: 'Company',
+    heading: 'Rechtliches',
     links: [
-      { label: 'About', href: '#' },
-      { label: 'Careers', href: '#' },
-      { label: 'Contact', href: '#' },
-    ],
-  },
-  {
-    heading: 'Legal',
-    links: [
-      { label: 'Privacy', href: '#' },
-      { label: 'Terms', href: '#' },
+      { label: 'Impressum', href: '#' },
+      { label: 'Datenschutz', href: '#' },
+      { label: 'Erstinformation', href: '#' },
     ],
   },
 ];
@@ -42,8 +36,15 @@ const COLUMNS = [
 export function SiteFooter(): JSX.Element {
   return (
     <footer className="border-t border-[var(--ds-gray-alpha-400)]">
-      <div className="mx-auto flex max-w-5xl flex-col gap-10 px-5 py-12 sm:px-8">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-5 py-12 sm:px-8">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col gap-4">
+            <Logo height={22} />
+            <p className="max-w-xs text-copy-14 text-[var(--ds-gray-900)] text-pretty">
+              Unabhängige Vermögensplanung. Anbieterneutral, transparent und auf
+              Ihre Ziele ausgerichtet.
+            </p>
+          </div>
           {COLUMNS.map((column) => (
             <div key={column.heading} className="flex flex-col gap-3">
               <h4 className="text-label-13 text-[var(--ds-gray-900)]">
@@ -58,12 +59,10 @@ export function SiteFooter(): JSX.Element {
           ))}
         </div>
         <div className="flex flex-col items-start justify-between gap-4 border-t border-[var(--ds-gray-alpha-400)] pt-6 sm:flex-row sm:items-center">
-          <div className="flex items-center gap-3">
-            <LogoVercel height={18} aria-label="Vercel" />
-            <span className="text-copy-13 text-[var(--ds-gray-700)]">
-              © {new Date().getFullYear()} Geist, Inc.
-            </span>
-          </div>
+          <span className="text-copy-13 text-[var(--ds-gray-700)]">
+            © {new Date().getFullYear()} OKONOMIK. Als Makler nicht an einen
+            Finanzdienstleister gebunden.
+          </span>
           <ThemeSwitcher />
         </div>
       </div>

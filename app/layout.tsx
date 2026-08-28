@@ -4,8 +4,9 @@ import type { Metadata, Viewport } from 'next';
 import { GeistProvider, geistFontClasses } from '@vercel/geistcn/core';
 
 export const metadata: Metadata = {
-  title: 'Geist Design System',
-  description: "Starter built with Vercel's Geist (geistcn) design system.",
+  title: 'OKONOMIK — Unabhängige Vermögensplanung & Altersvorsorge',
+  description:
+    'OKONOMIK ist Ihr unabhängiger Makler für Vermögensaufbau, Altersvorsorge und Edelmetalle. Anbieterneutral, transparent und auf Ihre Ziele ausgerichtet.',
 };
 
 export const viewport: Viewport = {
