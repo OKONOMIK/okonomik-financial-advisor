@@ -1,5 +1,5 @@
 import type { JSX } from 'react';
-import { Card } from '@vercel/geistcn/components/card';
+import { Card } from '@/components/ui';
 
 /**
  * Live-Goldpreis-Widget mit den offiziellen, automatisch aktualisierten

@@ -9,8 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@vercel/geistcn": "0.0.80",
-    "@vercel/geistcn-assets": "0.4.15",
+    "geist": "^1.7.2",
     "next": "16.3.0-canary.92",
     "pg": "^8.23.0",
     "react": "19.2.8",

@@ -2,11 +2,7 @@
 
 import type { JSX } from 'react';
 import { useMemo, useState } from 'react';
-import { Card } from '@vercel/geistcn/components/card';
-import { Input } from '@vercel/geistcn/components/input';
-import { Button } from '@vercel/geistcn/components/button';
-import { Note } from '@vercel/geistcn/components/note';
-import { IconChartTrendingDown, IconTarget } from '@vercel/geistcn-assets/icons';
+import { Card, Input, Button, Note, IconChartTrendingDown, IconTarget } from '@/components/ui';
 import { submitCalculatorLead } from '@/app/actions/leads';
 
 const EUR = new Intl.NumberFormat('de-DE', {
