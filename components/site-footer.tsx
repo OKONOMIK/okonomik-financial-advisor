@@ -39,7 +39,7 @@ export function SiteFooter(): JSX.Element {
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-5 py-12 sm:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col gap-4">
-            <Logo height={22} />
+            <Logo height={34} />
             <p className="max-w-xs text-copy-14 text-[var(--ds-gray-900)] text-pretty">
               Unabhängige Vermögensplanung. Anbieterneutral, transparent und auf
               Ihre Ziele ausgerichtet.

@@ -22,7 +22,7 @@ export function SiteHeader(): JSX.Element {
     <header className="sticky top-0 z-20 border-b border-[var(--ds-gray-alpha-400)] bg-[var(--ds-background-100)]/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 sm:px-8">
         <Link href="#" className="flex items-center gap-2.5">
-          <Logo height={22} />
+          <Logo height={30} />
           <span className="sr-only">OKONOMIK Startseite</span>
         </Link>
 
