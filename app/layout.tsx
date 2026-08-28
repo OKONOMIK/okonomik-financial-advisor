@@ -1,7 +1,7 @@
 import './globals.css';
 import type { JSX, ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
-import { GeistProvider, geistFontClasses } from '@vercel/geistcn/core';
+import { GeistProvider, geistFontClasses } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'OKONOMIK — Unabhängige Vermögensplanung & Altersvorsorge',

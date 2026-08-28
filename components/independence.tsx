@@ -1,5 +1,5 @@
 import type { JSX } from 'react';
-import { IconCheckCircleFill } from '@vercel/geistcn-assets/icons';
+import { IconCheckCircleFill } from '@/components/ui';
 
 const REASONS = [
   {

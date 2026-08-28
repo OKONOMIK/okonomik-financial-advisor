@@ -1,6 +1,5 @@
 import type { JSX } from 'react';
-import { Card } from '@vercel/geistcn/components/card';
-import { ButtonLink } from '@vercel/geistcn/components/button-link';
+import { Card, ButtonLink } from '@/components/ui';
 import { GoldpreisWidget } from '@/components/goldpreis-widget';
 
 const METALS = [

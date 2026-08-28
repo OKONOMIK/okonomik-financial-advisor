@@ -1,11 +1,5 @@
 import type { JSX } from 'react';
-import { Card } from '@vercel/geistcn/components/card';
-import {
-  IconChartTrendingUp,
-  IconShieldCheck,
-  IconCoins,
-  IconChartPie,
-} from '@vercel/geistcn-assets/icons';
+import { Card, IconChartTrendingUp, IconShieldCheck, IconCoins, IconChartPie } from '@/components/ui';
 
 const SERVICES = [
   {
