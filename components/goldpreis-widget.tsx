@@ -28,7 +28,7 @@ export function GoldpreisWidget(): JSX.Element {
           {/* Auto-aktualisierender 24-Stunden-Goldkurs in Euro von GOLD.DE */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://charts.gold.de/xb/goldkurs_24stunden_euro.jpg"
+            src="/api/goldpreis/goldkurs-24h-eur"
             alt="Goldpreis der letzten 24 Stunden in Euro — Chart von GOLD.DE"
             width={468}
             height={260}
@@ -45,7 +45,7 @@ export function GoldpreisWidget(): JSX.Element {
           {/* Kompakte Live-Preistafel (Gold & Silber) von GOLD.DE */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://charts.gold.de/preisgrafiken/preisgrafik172x280.jpg"
+            src="/api/goldpreis/preistafel"
             alt="Aktuelle Edelmetallpreise für Gold und Silber — Preistafel von GOLD.DE"
             width={172}
             height={280}
