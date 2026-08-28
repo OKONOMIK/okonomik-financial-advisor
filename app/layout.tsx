@@ -1,7 +1,8 @@
 import './globals.css';
 import type { JSX, ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
-import { GeistProvider, geistFontClasses } from '@/components/ui';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono as GeistMonoFont } from 'geist/font/mono';
 
 export const metadata: Metadata = {
   title: 'OKONOMIK — Unabhängige Vermögensplanung & Altersvorsorge',
@@ -20,10 +21,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>): JSX.Element {
   return (
-    <html className={geistFontClasses} lang="en" suppressHydrationWarning>
-      <body>
-        <GeistProvider>{children}</GeistProvider>
-      </body>
+    <html className={`${GeistSans.variable} ${GeistMonoFont.variable} bg-background`} lang="de" suppressHydrationWarning>
+      <body className={GeistSans.className}>{children}</body>
     </html>
   );
 }

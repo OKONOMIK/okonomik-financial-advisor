@@ -1,7 +1,8 @@
 @import 'tailwindcss';
 
 @theme inline {
-  --font-sans: Arial, Helvetica, sans-serif;
+  --font-sans: 'Geist Sans', Arial, Helvetica, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
 }
 
 @layer base {
