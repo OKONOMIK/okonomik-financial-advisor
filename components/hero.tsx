@@ -1,7 +1,7 @@
 import type { JSX } from 'react';
 import Image from 'next/image';
-import { ButtonLink } from '@vercel/geistcn/components/button-link';
-import { IconShieldCheck, IconCheck } from '@vercel/geistcn-assets/icons';
+import { ButtonLink } from '@/components/ui';
+import { IconShieldCheck, IconCheck } from '@/components/icons';
 
 const POINTS = ['Anbieterneutral', 'Transparente Beratung', 'Ohne Provisionsdruck'];
 

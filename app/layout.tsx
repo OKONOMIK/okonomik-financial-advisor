@@ -1,7 +1,6 @@
 import './globals.css';
 import type { JSX, ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
-import { GeistProvider, geistFontClasses } from '@vercel/geistcn/core';
 
 export const metadata: Metadata = {
   title: 'OKONOMIK — Unabhängige Vermögensplanung & Altersvorsorge',
@@ -20,10 +19,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>): JSX.Element {
   return (
-    <html className={geistFontClasses} lang="en" suppressHydrationWarning>
-      <body>
-        <GeistProvider>{children}</GeistProvider>
-      </body>
+    <html className="bg-[var(--ds-background-200)]" lang="de" suppressHydrationWarning>
+      <body>{children}</body>
     </html>
   );
 }

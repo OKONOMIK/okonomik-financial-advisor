@@ -2,9 +2,9 @@
 
 import type { JSX } from 'react';
 import { useState } from 'react';
-import { Link } from '@vercel/geistcn/components/link';
-import { ButtonLink } from '@vercel/geistcn/components/button-link';
-import { IconMenu, IconCross } from '@vercel/geistcn-assets/icons';
+import { Link } from '@/components/ui';
+import { ButtonLink } from '@/components/ui';
+import { IconMenu, IconCross } from '@/components/icons';
 import { Logo } from '@/components/logo';
 
 const NAV = [

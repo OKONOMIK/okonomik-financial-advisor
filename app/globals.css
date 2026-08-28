@@ -1,22 +1,15 @@
-@import '@vercel/geistcn/tailwind.css';
-@import '@vercel/geistcn/styles.css';
+@import 'tailwindcss';
 
-/* Tailwind v4 ignores node_modules during automatic content detection, so we
-   explicitly register the design-system package as a source. This ensures the
-   utility classes used inside @vercel/geistcn's components are generated. */
-@source "../node_modules/@vercel/geistcn";
-
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
-}
-
-body,
-html {
-  background: var(--ds-background-200);
-}
+:root { --ds-background-100: #ffffff; --ds-background-200: #faf8f3; --ds-gray-100: #f3f1ec; --ds-gray-700: #6b675f; --ds-gray-900: #403d37; --ds-gray-1000: #211f1b; --ds-gray-alpha-400: #d9d4ca; --ds-amber-100: #f8edcf; --ds-amber-400: #d6ad52; --ds-amber-700: #a47719; --ds-amber-800: #8b6417; --ds-amber-900: #68490f; --ds-shadow-medium: 0 12px 30px rgb(55 45 25 / 12%); }
+* { border-color: var(--ds-gray-alpha-400); }
+html, body { background: var(--ds-background-200); color: var(--ds-gray-1000); }
+body { min-height: 100vh; }
+.text-heading-16 { font-size: 1rem; font-weight: 650; line-height: 1.4; }
+.text-heading-32 { font-size: 2rem; font-weight: 700; line-height: 1.15; }
+.text-heading-40 { font-size: 2.5rem; font-weight: 700; line-height: 1.1; }
+.text-heading-56 { font-size: 3.5rem; font-weight: 700; line-height: 1.05; }
+.text-copy-14 { font-size: .875rem; line-height: 1.5; }
+.text-copy-16 { font-size: 1rem; line-height: 1.55; }
+.text-copy-18 { font-size: 1.125rem; line-height: 1.55; }
+.text-label-13 { font-size: .8125rem; font-weight: 650; line-height: 1.4; }
+@media (max-width: 640px) { .text-heading-40 { font-size: 2.25rem; } .text-heading-56 { font-size: 2.75rem; } }

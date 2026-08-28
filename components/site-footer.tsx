@@ -1,8 +1,8 @@
 'use client';
 
 import type { JSX } from 'react';
-import { ThemeSwitcher } from '@vercel/geistcn/components/theme-switcher';
-import { Link } from '@vercel/geistcn/components/link';
+import { ThemeSwitcher } from '@/components/ui';
+import { Link } from '@/components/ui';
 import { Logo } from '@/components/logo';
 
 const COLUMNS = [

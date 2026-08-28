@@ -2,11 +2,11 @@
 
 import type { JSX } from 'react';
 import { useMemo, useState } from 'react';
-import { Card } from '@vercel/geistcn/components/card';
-import { Input } from '@vercel/geistcn/components/input';
-import { Button } from '@vercel/geistcn/components/button';
-import { Note } from '@vercel/geistcn/components/note';
-import { IconChartTrendingDown, IconTarget } from '@vercel/geistcn-assets/icons';
+import { Card } from '@/components/ui';
+import { Input } from '@/components/ui';
+import { Button } from '@/components/ui';
+import { Note } from '@/components/ui';
+import { IconChartTrendingDown, IconTarget } from '@/components/icons';
 import { submitCalculatorLead } from '@/app/actions/leads';
 
 const EUR = new Intl.NumberFormat('de-DE', {

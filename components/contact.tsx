@@ -2,16 +2,13 @@
 
 import type { JSX } from 'react';
 import { useActionState } from 'react';
-import { Card } from '@vercel/geistcn/components/card';
-import { Input } from '@vercel/geistcn/components/input';
-import { Textarea } from '@vercel/geistcn/components/textarea';
-import { Button } from '@vercel/geistcn/components/button';
-import { Note } from '@vercel/geistcn/components/note';
+import { Card } from '@/components/ui';
+import { Input, Textarea, Button, Note } from '@/components/ui';
 import {
   IconEmail,
   IconPhone,
   IconClock,
-} from '@vercel/geistcn-assets/icons';
+} from '@/components/icons';
 import { submitContact, type ContactState } from '@/app/actions/leads';
 
 const INITIAL: ContactState = { status: 'idle' };
